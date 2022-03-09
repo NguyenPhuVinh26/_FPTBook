@@ -1,0 +1,90 @@
+﻿@model WebBanSach.Models.Data.KhachHang
+
+@{
+    ViewBag.Title = "DetailsUser";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>User Information Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Customer Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenKH)
+        </dd>
+
+        <dt>
+            Email
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            Address
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaChi)
+        </dd>
+
+        <dt>
+            Phone Number
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DienThoai)
+        </dd>
+
+        <dt>
+            Date Of Birth
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgaySinh)
+        </dd>
+
+        <dt>
+            Account
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaiKhoan)
+        </dd>
+
+        <dt>
+            Password
+        </dt>
+
+        <dd>
+            @Html.HiddenFor(model => model.MatKhau)
+        </dd>
+
+        <dt>
+            Create Date
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayTao)
+        </dd>
+
+        <dt>
+            Status
+        </dt>
+
+        <dd>
+            <a href="#">@(Model.TrangThai ? "Activated" : "Block")</a>
+        </dd>
+
+    </dl>
+</div>
+<p>  
+    @Html.ActionLink("Back", "ShowUser")
+    @*@Html.ActionLink("Edit", "Edit", new { id = Model.MaKH })*@
+</p>

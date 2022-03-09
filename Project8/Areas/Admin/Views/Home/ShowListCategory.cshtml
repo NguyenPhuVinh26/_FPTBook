@@ -1,0 +1,43 @@
+﻿@model IEnumerable<WebBanSach.Models.Data.TheLoai>
+
+@{
+    ViewBag.Title = "ShowListCategory";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Category Management</h2>
+
+<p>
+    @Html.ActionLink("Add Category", "AddCategory")
+</p>
+<table class="table" id="myTable">
+    <thead>
+        <tr>
+            <th>Category ID</th>
+            <th>Category Name</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr id="row_@item.MaLoai">
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaLoai)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenLoai)
+                </td>
+                <td>
+                    @Html.ActionLink("View", "UpdateCategory", new { id = item.MaLoai }) |
+                    @Ajax.ActionLink("Delete", "DeleteCategory", new { id = item.MaLoai }, new AjaxOptions
+               {
+                   Confirm = "Are you sure to delete this category?",
+                   OnComplete = "$('#row_" + @item.MaLoai + "').remove()",
+                   HttpMethod = "Delete"
+               })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
