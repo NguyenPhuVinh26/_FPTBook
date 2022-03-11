@@ -673,6 +673,13 @@
     <Content Include="Global.asax" />
     <Content Include="images\001.jpg" />
     <Content Include="images\0010.jpg" />
+    <Content Include="images\0011.jpg" />
+    <Content Include="images\0012.jpg" />
+    <Content Include="images\0013.jpg" />
+    <Content Include="images\0014.jpg" />
+    <Content Include="images\0015.jpg" />
+    <Content Include="images\0016.jpg" />
+    <Content Include="images\0017.jpg" />
     <Content Include="images\002.jpg" />
     <Content Include="images\003.jpg" />
     <Content Include="images\004.jpg" />
