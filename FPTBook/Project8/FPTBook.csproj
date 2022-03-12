@@ -701,11 +701,7 @@
     <Content Include="images\power-vs-force.jpg" />
     <Content Include="images\richdad.jpg" />
     <Content Include="images\robert.png" />
-    <Content Include="images\Secret.jpg" />
-    <Content Include="images\Smart.jpg" />
     <Content Include="images\the_alchemist__paulo_coelho.jpg" />
-    <Content Include="images\thinkandgrowrich.jpg" />
-    <Content Include="images\thinklike.jpg" />
     <Content Include="images\topSach.png" />
     <Content Include="images\trump.jpg" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
