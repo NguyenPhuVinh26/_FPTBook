@@ -8,7 +8,7 @@
                 @Html.Action("ShowCategory", "Home")
     </div>
     <div style="width:71%" class="col-md-9">
-        @*sách nổi bật*@
+
         <div  row carousel-holder">
             <div  class="col-md-12">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -25,13 +25,13 @@
                             </a>
                         </div>
                         <div class="item">
-            <a href="/Book/Details/9">
-                <img src="~/images/robert.png" alt="sildeImage2" />
-            </a>
+                            <a href="/Book/Details/9">
+                                <img src="~/images/00TRUMPBOOKS-COMBO-mobileMasterAt3x.jpg" alt="sildeImage2" />
+                            </a>
         </div>
         <div class="item">
-            <a  href="/Book/Details/10">
-                <img src="~/images/robert.png" alt="slideImage3" />
+            <a href="/Book/Details/10">
+                <img src="~/images/power-vs-force.jpg" alt="slideImage3" />
             </a>
         </div>
                     </div>
@@ -44,11 +44,11 @@
                 </div>
             </div>
         </div>
-        @*kết thúc sách nổi bật*@
+
         <hr />
-        @*sách bán chạy*@
+
         <div class="row">
-            <div style="position: absolute; width: 800px; height: 70px; left: 19px; top: 443px; background-color: #515252; border-radius: 5px; line-height: 2.1; margin:-15px;margin-left:-3px;">
+            <div style="position: absolute; width: 800px; height: 70px; left: 19px; top: 443px; background-color: #515252; border-radius: 5px; line-height: 2.1; margin:-15px;margin-left:-5px;">
                 <div class="row">
                     <div class="col-lg-1" style="margin: 1rem 0rem 0rem 5rem">
                         <img style="width: 46px;height: 46px;left: 50px;top: 484px;" src="~/images/topSach.png"></img>
@@ -63,15 +63,11 @@
         <div style="margin-top: 10rem"  class ="row">
             @Html.Action("TopDateBook","Book")            
         </div>
-        @*kết thúc sách nổi bật*@
-
-        @*Những cuốn sách trong kho và xem tất cả*@
         <hr />
         <h3><font style="color:#087BB0">Best Seller</font></h3>
         <p style="text-align:right"><a href="/Book/ShowAllBook">View All</a></p>      
         <div class="row">
             @Html.Action("DidYouSee", "Book")
         </div>
-        @*kết thúc sách mới cập nhật*@
     </div>
 </div>
